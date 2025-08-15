@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Logo">
+      </div>
+
+      <div class="nav-item">
+        <ul class="nav-links">
+          <li class="nav-link" id="dropdown1"><a class="dropbtn" href="#">Features <img src="./images/icon-arrow-down.svg" alt="down-icon"></a>
+            <ul class="dropdown">
+              <li class="dropdown-item"><img src="./images/icon-todo.svg" alt="to-do list icon"><a href="#">Todo List</a></li>
+              <li class="dropdown-item"><img src="./images/icon-calendar.svg" alt="calendar icon"><a href="#">Calendar</a></li>
+              <li class="dropdown-item"><img src="./images/icon-reminders.svg" alt="reminders icon"><a href="#">Reminders</a></li>
+              <li class="dropdown-item"><img src="./images/icon-planning.svg" alt="planning icon"><a href="#">Planning</a></li>
+            </ul>
+          </li>
+          <li class="nav-link" id="dropdown2"><a class="dropbtn" href="#">Company <img src="./images/icon-arrow-down.svg" alt="down-icon"></a>
+            <ul class="dropdown" >
+              <li class="dropdown-item"><a href="#">History</a></li>
+              <li class="dropdown-item"><a href="#">Our Team</a></li>
+              <li class="dropdown-item"><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-link"><a href="#">Careers</a></li>
+          <li class="nav-link"><a href="#">About</a></li>
+        </ul>
+        <ul class="login">
+          <li class="login-link"><a href="#">Login</a></li>
+          <li class="register-link"><a href="#">Register</a></li>
+        </ul>
+        
+      </div>
+      <div class="hamburger">
+        <a class="hamburger-link" href="#"><img src="./images/icon-menu.svg" alt="hamburger icon"></a>
+        
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container-left">
+        <h1>Make <span class="desktop-break"><br></span>  remote work</h1>
+        <p>Get your team in sync, no matter your location.  Streamline processes, create team rituals,  and  watch productivity soar.</p>
+        <button class="learn-more">Learn more</button>
+        <div class="section-logo">
+          <img class="section-under-logo" src="./images/client-databiz.svg" alt="databiz client logo">
+          <img class="section-under-logo" src="./images/client-audiophile.svg" alt="audiophile client logo">
+          <img class="section-under-logo" src="./images/client-meet.svg" alt="meet client logo">
+          <img class="section-under-logo" src="./images/client-maker.svg" alt="maker client logo">
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="hero-image-section">
+      <picture>
+        <source media="(max-width: 500px)" srcset="./images/image-hero-mobile.png">
+        <img class="hero-image" src="./images/image-hero-desktop.png" alt="hero image">
+      </picture>
+      
+    </section>
+  </main>
+
+
+  <div class="hamburger-menu-wrapper">
+    <div class="overlay"></div>
+    <div class="mobile-nav-wrapper">
+      <img src="./images/icon-close-menu.svg" alt="close hamburger icon" class="close-hamburger">
+      <nav class="mobile-nav">
+        <div class="mobile-nav-item">
+          <a href="#" class="mobile-dropdown-toggle">Features <img src="./images/icon-arrow-down.svg" alt="hamburger menu down icon"></a>
+          <ul class="mobile-dropdown">
+            <li class="dropdown-item"><img src="./images/icon-todo.svg" alt="to-do list icon"><a href="#">Todo List</a></li>
+            <li class="dropdown-item"><img src="./images/icon-calendar.svg" alt="calendar icon"><a href="#">Calendar</a></li>
+            <li class="dropdown-item"><img src="./images/icon-reminders.svg" alt="reminders icon"><a href="#">Reminders</a></li>
+            <li class="dropdown-item"><img src="./images/icon-planning.svg" alt="planning icon"><a href="#">Planning</a></li>
+          </ul>
+        </div>
+
+        <div class="mobile-nav-item">
+          <a href="#" class="mobile-dropdown-toggle">Company <img src="./images/icon-arrow-down.svg" alt="hamburger menu down icon"></a>
+          <ul class="mobile-dropdown">
+            <li class="dropdown-item"><a href="#">History</a></li>
+            <li class="dropdown-item"><a href="#">Our Team</a></li>
+            <li class="dropdown-item"><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+        <a href="#" class="mobile-login-btn">Login</a>
+        <a href="#" class="mobile-register-btn">Register</a>
+      </nav>
+    </div> 
+    
+  </div>
+
+
+
+
+
+ 
+  
+  <script src="./app.js" ></script>
+</body>
+</html>
